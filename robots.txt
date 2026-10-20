@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hroshovo.online/sitemap.xml

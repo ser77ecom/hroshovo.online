@@ -1,0 +1,26 @@
+/* Only identity and accessibility details; the layout comes from MoneyFast's reference CSS. */
+:root{--site-accent:#aa4d59;--site-accent-rgb:170,77,89;--icon-hue:75deg}
+body{background:#fff}
+.header-logo .brand-name,.footer-logo .brand-name{display:inline-flex;align-items:center;height:45px;font-size:28px;font-weight:700;letter-spacing:-1.5px;line-height:1;color:var(--site-accent)}
+.header-logo .brand-name{white-space:nowrap}
+.footer-logo .brand-name{color:#fff}
+.info-block{background:linear-gradient(0deg,rgba(var(--site-accent-rgb),.88),rgba(var(--site-accent-rgb),.88)),url('/assets/reference/background-info-block.png') center/cover no-repeat}
+.take-credit .container .take-credit-holder .content .content-card .icon img{filter:hue-rotate(var(--icon-hue))}
+.take-credit .container .take-credit-img picture{display:block;width:100%}
+.take-credit .container .take-credit-img img{display:block;object-position:center bottom}
+@media(min-width:992px){
+ .take-credit .container .take-credit-holder{flex:0 0 860px}
+ .take-credit .container .take-credit-img{flex:1 1 0;min-width:0}
+ .take-credit .container .take-credit-img picture{height:708px;overflow:hidden}
+ .take-credit .container .take-credit-img img{width:100%;height:708px;max-width:none;object-fit:cover}
+}
+.partners-list .partners-item .partner-description .partners-picture{object-fit:contain;object-position:left center}
+.btn:focus-visible,a:focus-visible{outline:3px solid #f4ad38;outline-offset:3px}
+.legal-main{min-height:65vh;padding:60px 0 90px;color:#111}
+.legal-main h1{font-size:42px;font-weight:700;margin-bottom:25px}
+.legal-main h2{font-size:24px;font-weight:600;margin:28px 0 12px}
+.legal-main p{font-size:17px;line-height:1.6;max-width:800px;margin-bottom:15px}
+.legal-main a{text-decoration:underline;color:var(--site-accent)}
+@media(max-width:991px){.take-credit .container .take-credit-img picture{display:flex;align-items:flex-end;justify-content:center;width:min(300px,100%);height:460px;overflow:hidden}.take-credit .container .take-credit-img img{width:100%;height:440px;max-width:none;object-fit:cover;object-position:center bottom}.header-logo .brand-name{font-size:25px}}
+@media(max-width:380px){.header-logo .brand-name{font-size:22px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
